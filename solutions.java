@@ -78,7 +78,7 @@ public SumOrSameGame(int numRows, int numCols){
 
 // Q4 Part B
 public boolean clearPair(int row, int col){
-	for(int r = 0; r < puzzle.length; ++r){
+	for(int r = row; r < puzzle.length; ++r){
 		for(int c = 0; c < puzzle[r].length; ++c){
 			if(r == row && c == col) continue;
 			if(puzzle[r][c] == puzzle[row][col] || puzzle[r][c] + puzzle[row][col] == 10) {
