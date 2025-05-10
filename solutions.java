@@ -60,7 +60,7 @@ public ArrayList<Match> buildMatches(){
 		}
 	} else {
 		for(int i=1;i<=size/2;++i){
-			matches.add(new Match(competitorList.get(i), competitorList.get(n-i)));
+			matches.add(new Match(competitorList.get(i), competitorList.get(size-i)));
 		}
 	}
 }
