@@ -63,6 +63,7 @@ public ArrayList<Match> buildMatches(){
 			matches.add(new Match(competitorList.get(i), competitorList.get(size-i)));
 		}
 	}
+	return matches;
 }
 
 // Q4 Part A
